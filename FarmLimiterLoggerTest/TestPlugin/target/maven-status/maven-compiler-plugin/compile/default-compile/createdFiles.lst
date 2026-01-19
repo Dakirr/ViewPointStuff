@@ -1,0 +1,2 @@
+org\dakirr\testPlugin\listener\EntityDeletionListener.class
+org\dakirr\testPlugin\database\DatabaseManager.class
