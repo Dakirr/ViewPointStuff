@@ -5,17 +5,21 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.Plugin;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public final class CommandEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
-    private Plugin plugin;
-    private String sender;
-    private String command;
-    private String[] args;
+    public Plugin plugin;
+    public String sender;
+    public String command;
+    public List<String> args;
 
     public CommandEvent(Plugin p, String s, String c, String[] a) {
         sender = s;
         command = c;
-        args = a;
+        args = a.length == 0 ? new ArrayList<>() : new ArrayList<>(Arrays.asList(a));
         plugin = p;
     }
 
@@ -23,7 +27,7 @@ public final class CommandEvent extends Event {
         return command;
     }
 
-    public String[] getArgs() {
+    public List<String> getArgs() {
         return args;
     }
 
