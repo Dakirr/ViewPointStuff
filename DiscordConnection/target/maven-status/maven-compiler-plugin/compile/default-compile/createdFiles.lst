@@ -1,3 +1,4 @@
 com\dakirr\dcp\Command2Event\CommandEvent.class
 com\dakirr\dcp\DiscordConnectionPlugin.class
+com\dakirr\dcp\Command2Event\CommandEventListener.class
 com\dakirr\dcp\Command2Event\CommandEventCreator.class

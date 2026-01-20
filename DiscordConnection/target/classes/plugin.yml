@@ -3,13 +3,9 @@ version: '1.1-SNAPSHOT'
 main: com.dakirr.dcp.DiscordConnectionPlugin
 api-version: '1.21'
 commands:
-  Test:
-    description: Dakirr tests something.
+  universalCommand:
+    description: Universal command that takes actual Command Name as first argument. It is made to be called from MyCommand plugin.
     aliases:
-      - T
-    usage: /<command> [testoption1|testoption2]
-  Test2:
-    description: Dakirr still tests something.
-    aliases:
-      - T2
-    usage: /<command> <testarg1> [testarg2]
+      - uc
+      - universal
+    usage: /<command> <CommandName> [options]

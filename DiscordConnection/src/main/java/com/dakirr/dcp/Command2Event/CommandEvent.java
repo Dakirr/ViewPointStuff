@@ -17,8 +17,6 @@ public final class CommandEvent extends Event {
         command = c;
         args = a;
         plugin = p;
-        plugin.getLogger().info(String.format("CommandEvent created by %s for /%s %s",
-                getSender(), getCommand(), getArgsString()));
     }
 
     public String getCommand() {
